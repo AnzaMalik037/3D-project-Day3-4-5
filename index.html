@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: Scroll Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas3d"></canvas>
+
+    <div class="content">
+        <section>
+            <div class="text-content">
+                <h2>Day 3,4,5: Scroll Animation</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-content">
+                <p>Calculate scroll position as a percentage (0% to 100%), then use that percentage to control the cube's rotation.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-content">
+                <p>scrollPercent = scrollTop / scrollHeight</p>
+                <p>cube.rotation.y = scrollPercent * Math.PI * 2</p>
+                <p>This maps 0-100% scroll to 0-360° rotation!</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-content">
+                <h2>END</h2>
+            </div>
+        </section>
+    </div>
+
+    <div class="scroll-indicator" id="scrollIndicator">↓</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
